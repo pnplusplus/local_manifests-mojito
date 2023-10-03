@@ -1,17 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
+  <remove-project name="android_build" />
   <remove-project name="android_frameworks_av" />
   <remove-project name="android_frameworks_base" />
   <remove-project name="android_frameworks_native" />
   <remove-project name="android_vendor_awaken" />
+  <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/piex" />
+  <remove-project name="platform/packages/providers/MediaProvider" />
   <remove-project name="platform/system/libhwbinder" />
+  <remove-project name="platform/tools/apksig" />
 
+  <project path="build/make" name="pnplusplus/android_build" groups="pdk" revision="triton" remote="github" >
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
   <project path="frameworks/av" name="pnplusplus/android_frameworks_av-awaken" revision="triton" remote="github" />
   <project path="frameworks/base" name="pnplusplus/android_frameworks_base-awaken" revision="triton" remote="github" />
   <project path="frameworks/native" name="pnplusplus/android_frameworks_native-awaken" revision="triton" remote="github" />
+  <project path="external/libxml2" name="LineageOS/android_external_libxml2" groups="pdk,libxml2" remote="LineageOS"/>
   <project path="external/piex" name="pnplusplus/android_external_piex" revision="android-13.0.0_r75" remote="github" />
+  <project path="packages/modules/Bluetooth" name="pnplusplus/android_packages_modules_Bluetooth-awaken" groups="pdk" revision="triton" remote="github" />
+  <project path="packages/modules/Wifi" name="pnplusplus/android_packages_modules_Wifi-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
+  <project path="packages/providers/MediaProvider" name="pnplusplus/android_packages_providers_MediaProvider-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
+  <project path="packages/services/Telecomm" name="pnplusplus/android_packages_services_Telecomm-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
   <project path="system/libhwbinder" name="pnplusplus/android_system_libhwbinder" revision="android-13.0.0_r75" remote="github" />
+  <project path="tools/apksig" name="LineageOS/android_tools_apksig" groups="pdk,tradefed" remote="LineageOS" />
   <project path="vendor/awaken" name="pnplusplus/android_vendor_awaken" revision="triton" remote="github" />
   <project path="vendor/extra" name="pnplusplus/android_vendor_extra" revision="main" remote="github" />
 
