@@ -7,7 +7,12 @@
   <remove-project name="android_vendor_awaken" />
   <remove-project name="platform/external/libxml2" />
   <remove-project name="platform/external/piex" />
+  <remove-project name="platform/external/webp" />
+  <remove-project name="platform/packages/modules/DnsResolver" />
+  <remove-project name="platform/packages/modules/StatsD" />
   <remove-project name="platform/packages/providers/MediaProvider" />
+  <remove-project name="platform/packages/providers/TelephonyProvider" />
+  <remove-project name="platform/system/ca-certificates" />
   <remove-project name="platform/system/libhwbinder" />
   <remove-project name="platform/tools/apksig" />
 
@@ -25,10 +30,15 @@
   <project path="frameworks/native" name="pnplusplus/android_frameworks_native-awaken" revision="triton" remote="github" />
   <project path="external/libxml2" name="LineageOS/android_external_libxml2" groups="pdk,libxml2" remote="LineageOS"/>
   <project path="external/piex" name="pnplusplus/android_external_piex" revision="android-13.0.0_r75" remote="github" />
+  <project path="external/webp" name="pnplusplus/android_external_webp-awaken" groups="pdk,qcom_msm8x26" revision="triton" remote="github" />
   <project path="packages/modules/Bluetooth" name="pnplusplus/android_packages_modules_Bluetooth-awaken" groups="pdk" revision="triton" remote="github" />
+  <project path="packages/modules/DnsResolver" name="LineageOS/android_packages_modules_DnsResolver" groups="pdk-cw-fs,pdk-fs" remote="LineageOS" />
+  <project path="packages/modules/StatsD" name="LineageOS/android_packages_modules_StatsD" groups="pdk-cw-fs,pdk-fs" revision="LineageOS" />
   <project path="packages/modules/Wifi" name="pnplusplus/android_packages_modules_Wifi-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
   <project path="packages/providers/MediaProvider" name="pnplusplus/android_packages_providers_MediaProvider-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
+  <project path="packages/providers/TelephonyProvider" name="pnplusplus/android_packages_providers_TelephonyProvider-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
   <project path="packages/services/Telecomm" name="pnplusplus/android_packages_services_Telecomm-awaken" groups="pdk-cw-fs,pdk-fs" revision="triton" remote="github" />
+  <project path="system/ca-certificates" name="LineageOS/android_system_ca-certificates" groups="pdk" remote="LineageOS" />
   <project path="system/libhwbinder" name="pnplusplus/android_system_libhwbinder" revision="android-13.0.0_r75" remote="github" />
   <project path="tools/apksig" name="LineageOS/android_tools_apksig" groups="pdk,tradefed" remote="LineageOS" />
   <project path="vendor/awaken" name="pnplusplus/android_vendor_awaken" revision="triton" remote="github" />
