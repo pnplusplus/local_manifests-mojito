@@ -51,6 +51,7 @@
   <project path="vendor/extra" name="pnplusplus/android_vendor_extra" revision="main" remote="github" />
 
   <project path="device/xiaomi/mojito" name="pnplusplus/android_device_xiaomi_mojito" revision="awaken-triton" remote="github" />
+  <project path="vendor/dolby" name="pnplusplus/android_vendor_dolby" revision="main" remote="github" />
   <project path="vendor/xiaomi/mojito" name="pnplusplus/android_vendor_xiaomi_mojito" revision="lineage-20.0" remote="github" />
   <project path="vendor/xiaomi/mojito-leicacamera" name="pnplusplus/android_vendor_xiaomi_mojito-leicacamera" revision="main" remote="github" />
   <project path="kernel/xiaomi/mojito" name="fiqri19102002/android_kernel_xiaomi_mojito" revision="inline-rom" remote="github" />
